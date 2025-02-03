@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="19.203" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="Online shopping process on LC Waikiki website" name="Completing an order and verifying favorites" time="18.734">
+<failure type="org.openqa.selenium.NoSuchWindowException" message="Browsing context has been discarded
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [a806d783-141f-4827-ab9d-704df3772e16, findElement {value=//*[@id='cookieseal-banner-reject'], using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 127.0, moz:accessibilityChecks: false, moz:buildID: 20240606181944, moz:debuggerAddress: 127.0.0.1:8024, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20280, moz:profile: C:\Users\gs_fu\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:8024/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: a806d783-141f-4827-ab9d-704df3772e16">
+<![CDATA[org.openqa.selenium.NoSuchWindowException: Browsing context has been discarded
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [a806d783-141f-4827-ab9d-704df3772e16, findElement {value=//*[@id='cookieseal-banner-reject'], using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 127.0, moz:accessibilityChecks: false, moz:buildID: 20240606181944, moz:debuggerAddress: 127.0.0.1:8024, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20280, moz:profile: C:\Users\gs_fu\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:8024/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: a806d783-141f-4827-ab9d-704df3772e16
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at pages.HomePage.dragAndClickMouseCursor(HomePage.java:40)
+	at stepDefinition.HomePageSteps.drag_mouse_cursor_and_click_element(HomePageSteps.java:23)
+	at ✽.Drag mouse cursor on the Giris Yap icon and click on the Giris Yap button(file:///C:/Users/gs_fu/Desktop/lcwUITest/lcwUITest/src/test/resources/features/LCWTestScenario.feature:5)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I navigate to homepage................................................passed
+When Drag mouse cursor on the Giris Yap icon and click on the Giris Yap button.failed
+And I enter a valid email and click the Devam button........................skipped
+And I enter a valid password and click the Giris Yap button.................skipped
+And I drag mouse on the "ÇOCUK & BEBEK" after "KIZ ÇOCUK " and click "Mont ve Kaban" from the submenu.skipped
+When I select "5-6 Yaş" for the Beden filter................................skipped
+When I select "6 Yaş" for the Beden filter..................................skipped
+When I select "6-7 Yaş" for the Beden filter................................skipped
+And I select "BEJ" for the Renk filter......................................skipped
+When I click on the sorting dropdown and select "En çok satanlar"...........skipped
+When I click on the "4" product in the list.................................skipped
+And I select an available size for the product..............................skipped
+When I get the product name and color.......................................skipped
+And I click the Sepete Ekle button..........................................skipped
+When I navigate to the Sepetim page.........................................skipped
+Then I verify the product name, color, quantity and price are correct.......skipped
+When I click on the heart icon on the product card to add it to favorites...skipped
+When I navigate to the Favorilerim page.....................................skipped
+And I verify the previously favorited product is listed using its name......skipped
+And Close the browser.......................................................skipped
+]]></system-out>
+</testcase>
+</testsuite>
